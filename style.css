@@ -684,7 +684,7 @@ section {
 
     .section-faq-banner {
         justify-content: none;
-        min-height: 80vh;
+        min-height: 90vh;
     }
 
     .banner-text{
@@ -739,6 +739,10 @@ section {
     /*DUVIDAS*/
 
     .duvidas {
-        min-height: 80vh;
+        max-height: 60vh;
+    }
+
+    .duvidas-contato {
+        height: 60vh;
     }
 }
