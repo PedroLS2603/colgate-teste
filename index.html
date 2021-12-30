@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQ</title>
+        <meta chartset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-escale:1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="./script.js"></script>
+        <section class="section-faq-banner">
+            <div class="banner-text">
+                <img src="./assets/logoTroca100.png" id="troca100Banner">
+                <h1>FAQ</h1>
+                <span>Tire suas dúvidas</span>
+            </div>
+            <img src="./assets/lavando-rosto.jpg" id="banner-img">
+        </section>
+        <!-- Secção FAQ -->
+        <section class="section-faq">
+            <div class="section-faq-header">
+                <h1>Para você</h1>
+                <span>Role para baixo para conferir as dúvidas mais frequentes.</span>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="consumidor-img"></div>
+                     <div class="faq-item-card">
+                        <span>Consumidor(a)</span>
+                    </div>
+                    <span>Veja as principais dúvidas e respostas para consumidores</span>
+                </div>
+                <div class="faq-item">
+                    <div class="farmacia-img"></div>
+                    <div class="faq-item-card">
+                        <span>Farmácia</span>
+                    </div>
+                    </a>
+                    <span>Tire dúvidas sobre o programa e veja como  autorizar o desconto</span>
+                </div>
+            </div>
+        </section>
+        <!--Perguntas do consumidor-->
+        <section class="question-container" id="consumidor">
+            <div class="question-header" onclick="showSection('faq-section-1')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Não recebi meu cupom</span>
+            </div>
+            <div class="question-content" id="faq-section-1">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-1')">Em quanto tempo deveria chegar meu cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-1">Em até 48 horas após seu contato com o representante Colgate-Palmolive</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-2')">Como vou receber meu cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-2">No e-mail informado durante seu contato com o representante Colgate-Palmolive</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-3')">Recebi vários e-mails da Colgate, mas nenhum é um cupom</span></strong>
+                    <span class="resposta" id="resp-quest-3">Seu cupom entrará através do sistema do nosso parceiro como epharmatecnologia</span>
+                </div>  
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-4')">Não vejo meu cupom, o que fazer?</span></strong>
+                    <span class="resposta" id="resp-quest-4">Busque em seus filtros e caixa de Spam, o remetente é a epharmatecnologia</span>
+                </div>
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-2')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>O que é o cupom?</span>
+            </div>
+            <div class="question-content" id="faq-section-2">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-5')">Com o que meu cupom se parece?</span></strong>
+                    <span class="resposta" id="resp-quest-5">Seu cupom é um e-mail instrutívo com um código de barras de uso único</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-6')">Como devo buscar pelo meu cupom na caixa e e-mails?</span></strong>
+                    <span class="resposta" id="resp-quest-6">O remetente é nosso parceiro epharmatecnologia</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-7')">Eu preciso imprimir meu cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-7">Não é necessário imprimir, mas você precisa ter os números anotados ou apresentá-lo na tela do celular para resgatar seu produto</span>
+                </div>  
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-8')">Qual é a validade do meu cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-8">3 meses.</span>
+                </div>
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-3')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Por que a Colgate me enviou este cupom?</span>
+            </div>
+            <div class="question-content" id="faq-section-3">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-9')">Porque estou recebendo um cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-9">Pensamos em uma forma de agilizar o processo e dar a você a liberdade de escolher o produto Colgate-Palmolive que seja mais conveniente para seu momento.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-10')">Não gostei desse processo, posso desistir dele?</span></strong>
+                    <span class="resposta" id="resp-quest-10">Ficaremos felizes em ajudar você a melhorar sua experiência. A equipe do SAC está à disposição de segunda à sexta-feira das 8h às 17hs no 0800-703-7722. Se preferir, envie uma mensagem por meio do <a href="http://www.colgate.com.br/contato" target="_blank">www.colgate.com.br/contato</a> com o motivo da sua solicitação, número do Protocolo e CPF.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-11')">Se eu desistir do cupom, ainda posso eleger o produto que quiser?</span></strong>
+                    <span class="resposta" id="resp-quest-11">A alteração do processo de reposição estará sujeita à disponibilidade do produto em estoque.</span>
+                </div>  
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-4')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Regras para resgate</span>
+            </div>
+            <div class="question-content" id="faq-section-4">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-12')">Qual o valor limite da minha compra?</span></strong>
+                    <span class="resposta" id="resp-quest-12">O cupom não possui limite de valor, ele estabelece apenas o limite de quantidade: um cupom dá direito a um produto Colgate-Palmolive participante.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-13')">Quantos produtos eu posso resgatar com um cupom?</span></strong>
+                    <span class="resposta" id="resp-quest-13">Um cupom permite resgatar 01 (um) produto Colgate-Palmolive de tamanho regular. Ou seja, não são considerados como 01 (um) produto aqueles ofertados em embalagens ou fardos promocionais tipo Leve / Pague ou Leve / Ganhe. Consulte a lista de produtos participantes em seu cupom.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-14')">Quais são os produtos participantes?</span></strong>
+                    <span class="resposta" id="resp-quest-14">Em geral, você poderá escolher entre qualquer Produto de Cuidado Pessoal ou Cuidado Oral Colgate-Palmolive de tamanho regular segundo a disponibilidade da farmácia. Consulte a lista de produtos participantes em seu cupom. Lembrando que 01 (um) cupom permite resgatar 01 (um) produto.</span>
+                </div>  
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-5')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Regras para resgate</span>
+            </div>
+            <div class="question-content" id="faq-section-5">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-15')">Posso trocar por produtos de outras marcas?</span></strong>
+                    <span class="resposta" id="resp-quest-15">Não, somente Colgate-Palmolive.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-16')">Posso usar meu cupom para comprar medicamentos ou outros produtos?</span></strong>
+                    <span class="resposta" id="resp-quest-16">Não, somente produtos Colgate-Palmolive.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-17')">Quais são as farmácias credenciadas?</span></strong>
+                    <span class="resposta" id="resp-quest-17">A lista de redes credenciadas está disponível em seu cupom individual, mas você também pode consultá-la em seu cupom</span>
+                </div>  
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-18')">Posso trocar meu cupom fora das redes de farmácias credenciadas?</span></strong>
+                    <span class="resposta" id="resp-quest-18">Para validar seu desconto será necessário que o sistema correto esteja habilitado no estabelecimento, por esse motivo é necessário que você observe se a loja onde está faz parte da rede credenciada.</span>
+                </div>
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-6')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Regras para resgate</span>
+            </div>
+            <div class="question-content" id="faq-section-6">
+                <div class="identificação-pergunta">
+                    <span>eu sou o(a) consumidor(a)</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-19')">Fui até a farmácia e me disseram que não conhecem esse Programa</span></strong>
+                    <span class="resposta" id="resp-quest-19">Todas as farmácias credenciadas com nosso parceiro ePharma possuem o sistema habilitado para realizar o resgate do produto. Pode se tratar de um caso pontual e as equipes de suporte estão preparadas para ajudar caso necessário.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-20')">Estão me perguntando se comprei o produto aqui</span></strong>
+                    <span class="resposta" id="resp-quest-20">Fique tranquilo(a) pois esse não é um requisito do Programa. Você é um beneficiário(a) de um Programa ePharma em parceria com a Colgate-Palmolive e tem direito a resgatar um produto de sua escolha. Caso haja qualquer dúvida ou desconforto na sua experiência, fale com nossas equipes de suporte.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-21')">O sistema não autoriza o desconto / gera um valor a pagar</span></strong>
+                    <span class="resposta" id="resp-quest-21">O sistema só deixará de validar seu desconto integral se você estiver tentando levar um produto não participante. Verifique se o nome do aprovador é mesmo Troca 100% e não outro como, Mais Saúde Bucal ou Sensitive.</span>
+                </div>  
+            </div>
+        </section>
+        <!--Perguntas do farmaceutico-->
+        <section class="question-container" id="farmaceutico">
+            <div class="question-header" onclick="showSection('faq-section-7')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Dúvidas gerais</span>
+            </div>
+            <div class="question-content" id="faq-section-7">
+                <div class="identificação-pergunta">
+                    <span >eu trabalho na farmácia</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-22')">O Programa Troca 100% Colgate existe?</span></strong>
+                    <span class="resposta" id="resp-quest-22">Existe. É uma parceria com a ePharma para atender critérios do Serviço de Atenção ao Consumidor.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-23')">Quais os critérios para resgate do produto com 100% de desconto?</span></strong>
+                    <span class="resposta" id="resp-quest-23">Os critérios são definidos pelo Serviço de Atenção ao Consumidor Colgate-Palmolive.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-24')">Tenho um(a) beneficiário(a) que não comprou o produto aqui e quer receber outro com 100% de desconto</span></strong>
+                    <span class="resposta" id="resp-quest-24">Nós não precisamos do produto reportado pelo(a) beneficiário(a). Se você possui o aprovador Troca 100% Colgate, você está apto e pode realizar esta venda através do sistema ePharma.</span>
+                </div>  
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-8')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Dúvidas gerais</span>
+            </div>
+            <div class="question-content" id="faq-section-8">
+                <div class="identificação-pergunta">
+                    <span>eu trabalho na farmácia</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-25')">Como acesso o sistema aprovador Troca 100% Colgate?</span></strong>
+                    <span class="resposta" id="resp-quest-25">Abra o sistema aprovador ePharma e busque o Troca 100% Colgate entre as opções na barra de rolagem. Se o produto escolhido pelo(a) beneficiário estiver entre os produtos participantes, basta digitalizar os códigos de barras e você terá a venda no valor simbólico de 0,01.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-26')">O código consta como inválido</span></strong>
+                    <span class="resposta" id="resp-quest-26">Verifique se o nome do aprovador é mesmo Troca 100% e não outro como, Mais Saúde Bucal ou Sensitive. Isso é importante pois o formato de cada cupom é diferente.</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-27')">Quando digitalizo o código de barras vejo um erro</span></strong>
+                    <span class="resposta" id="resp-quest-27">Entre em contato com a equipe de suporte Alô Farmácia (11) 4002-1600</span>
+                </div>  
+            </div>
+        </section>
+        <section class="question-container">
+            <div class="question-header" onclick="showSection('faq-section-9')">
+                <img src="./assets/scroll-down-question-header.png">
+                <span>Dúvidas gerais</span>
+            </div>
+            <div class="question-content" id="faq-section-9">
+                <div class="identificação-pergunta">
+                    <span>eu trabalho na farmácia</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-28')">Como faço para receber pelo produto dessa venda?</span></strong>
+                    <span class="resposta" id="resp-quest-28">Você receberá pelo valor da venda diretamente pela ePharma, conforme as regras dos demais programas</span>
+                </div>
+                <div class="pergunta-resposta">
+                    <strong><span class="pergunta" onclick="showQuestion('resp-quest-29')">Quanto receberei pela venda?</span></strong>
+                    <span class="resposta" id="resp-quest-29">Você receberá pelo valor de venda do produto diretamente pela ePharma, conforme as regras dos demais programas</span>
+                </div>  
+            </div>
+        </section>         
+        <!-- Secção de produtos não participantes -->
+        <section class="section-nao-participam">
+            <div class="nao-participam question-container">
+                <h1>Não participam</h1>
+                <div class="nao-participam-itens">
+                    <div class="nao-participam-item"><div class="nao-participam-img produtos-promocionais"></div><span>produtos promocionais</span></div>
+                    <div class="nao-participam-item"><div class="nao-participam-img produtos-qtd-especial"></div><span>produtos com quantidade especial</span></div>
+                    <div class="nao-participam-item"><div class="nao-participam-img produtos-leve-mais-pague-menos"></div><span>produtos tipo leve+pague-</span></div>
+                </div>
+            </div>
+            <div class="kit-promocional">
+                <img src="./assets/kit-promocional.jpg">
+                <span>Kits promocionais</span>
+            </div>
+        </section>
+        <!-- Secção saiba mais - o que esta buscando? (oqeb) -->
+        <section class="section-o-que-esta-buscando">
+            <div class="oqeb-header">
+                <span id="oqeb-title">Saiba mais</span>
+                <span id="oqeb-sub-title">O que está buscando?</span>
+            </div>
+            <div class="oqeb-container">
+                <div class="oqeb-item">
+                    <h1>Farmácias</h1>
+                    <h3>Consulte aqui a lista de credenciadas ao programa</h3>
+                    <a href="https://ias2.epharmatecnologia.com.br/sa/pesquisas/lojas?p_pln=54141" target="_blank"><img src="./assets/cestinha.png"></a>
+                </div>
+                <div class="oqeb-item">
+                    <h1>Produtos</h1>
+                    <h3>Veja quais são os produtos participantes</h3>
+                    <a href="http://move.epharma.com.br/colgate/FileUpload/03112021110025.pdf" target="_blank"><img src="./assets/saiba-mais-produtos.png"></a>
+                </div>
+            </div>
+        </section>        
+        <!-- Secção duvidas -->
+        <section class="duvidas">
+            <img id="duvidas-img" src="./assets/side-img-duvidas.png">
+            <div class="duvidas-container">
+                <div class="duvidas-contato">
+                    <h1>Dúvidas</h1>
+                    <div class="duvidas-contato-info">
+                        <h1>Alô Farmácia</h1>
+                        <span>(11) 4002-1600</span>
+                        <h1>SAC Colgate-Palmolive</h1>
+                        <span>0800-703-7722</span>
+                        <br>
+                        <a href="https://www.colgate.com.br/contato" target="_blank">colgate.com.br/contato</a>
+                        <div class="duvidas-container-footer">
+                            <a href="https://www.facebook.com/ColgateBrasil" target="_blank"><img src="./assets/logo-messenger.png"></a>
+                            <a href="https://www.instagram.com/colgatebrasil/" target="_blank"><img src="./assets/logo-direct-insta.png"></a>
+                        <span>colgatebrasil</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </body>
+</html>
