@@ -651,9 +651,14 @@ section {
         font-size: 3vw;
     }
 
+    .oqeb-item a {
+        opacity: 1;
+    }
+
     .oqeb-item a img {
         width: 40vw;
         animation: twinkle 1.5s infinite;
+
     }
 
     /*DUVIDAS*/
