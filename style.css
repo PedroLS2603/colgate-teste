@@ -1,0 +1,731 @@
+
+/*********Configuração geral**********/
+:root { 
+    --main-color: #d2010d; 
+    --gray-text: #684465;
+    --question--section-header-color: #d0d6d4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+section { 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+ 
+/********** Secção de produtos não participantes **********/
+
+
+.section-nao-participam {
+    padding: 10px;
+    display: flex;
+}
+
+.nao-participam{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw; 
+    min-height: 100vh;
+ }
+.nao-participam h1, .kit-promocional h1 {
+    font-size: 2.8vw;
+}
+
+.nao-participam span, .kit-promocional span{
+    font-size: 1.5vw;
+}
+.nao-participam-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 180px;
+    border: 2px solid black;
+    margin-bottom: 5vh;
+}
+
+.nao-participam-itens {
+    margin-top: 15vh;
+}
+
+.nao-participam-item {
+    display: flex;
+    width: 40vw;
+    align-items: center;
+}
+
+.nao-participam-item span {
+    margin-left: 3vw;
+}
+
+
+.produtos-promocionais {
+    background-image: url("./assets/produto-promocional.jpg");
+}
+
+.produtos-qtd-especial{
+    background-image: url("./assets/produto-qtd-especial.jpg");
+
+}
+
+.produtos-leve-mais-pague-menos {
+    background-image: url("./assets/pague-leve+.jpg");
+}
+.kit-promocional {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+.kit-promocional img {
+    width: 40vw;
+}
+
+.kit-promocional span {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/********** Secção saiba mais - o que esta buscando? (oqeb)**********/
+
+
+.section-o-que-esta-buscando {
+    background-image: url('./assets/bg-o-que-esta-buscando.png');
+    background-repeat: no-repeat;
+}
+
+.oqeb-header {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: center;
+    padding: 3vh 0vh 3vh 0vh;
+}
+
+#oqeb-title {
+    font-size: 2.5vw;
+}
+
+#oqeb-sub-title {
+    font-size: 1.5vw;
+}
+
+#oqeb-title, #oqeb-sub-title {
+    color: #ffffff;
+    padding: 3vh;
+    font-weight: 600;
+}
+
+
+.oqeb-container{
+    padding: 8vw 0vw 8vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.oqeb-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width: 20vw;
+}
+
+.oqeb-item a {
+    margin: auto;
+}
+
+.oqeb-item h1 {
+    font-size: 2vw;
+}
+
+.oqeb-item h3 {
+    font-size: 1.5vw;
+}
+
+.oqeb-item a {
+    opacity: .8;
+    transition: .6s;
+}
+
+.oqeb-item a:hover {
+    opacity: 1;
+}
+
+/********** Secção FAQ **********/
+
+
+.section-faq-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-faq-header span {
+    font-size: 2vw;
+    color: var(--gray-text);
+}
+
+.section-faq h1 {
+    color: var(--main-color);
+    font-size: 5vw;
+    margin-left: 10vw;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.consumidor-img, .farmacia-img {
+    background-image: url('./assets/consumidor.png');
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.farmacia-img {
+    background-image: url('./assets/farmacia.png');
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-item a {
+    opacity: .9;
+    transition: .6s;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.faq-item a:hover {
+    opacity: 1;
+}
+
+.faq-item .consumidor-img, .faq-item .farmacia-img {
+    z-index: 1;
+}
+
+.faq-item-card {
+    background-color: var(--main-color);
+    padding: 10vh;
+    border-radius: 20px;
+    width: 20vw;
+    margin-top: -7vh;
+}
+
+.faq-item-card span {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2vw;
+}
+
+.faq-item span {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 3vh;
+    width: 80%;
+}
+
+/********** Secção duvidas **********/
+
+.duvidas {
+    background-color: var(--main-color);
+    display: flex;
+}
+
+#duvidas-img {
+    width: 80vw;
+}
+
+.duvidas-container {
+    display: flex;
+    width: 100vw;
+}
+
+.duvidas-container, .duvidas-container a{
+    color: #ffffff;
+}
+
+.duvidas-container a {
+    text-decoration: none;
+    opacity: .8;
+    transition: .6s;
+}
+
+.duvidas-container a:hover {
+    opacity: 1;
+}
+
+.duvidas-container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.duvidas-contato {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    height: 80vh;
+}
+
+.duvidas-contato span, .duvidas-contato a {
+    font-size: 1.5vw;
+}
+
+.duvidas-contato h1 {
+    font-size: 3vw;
+}
+
+
+/********* Secção FAQ - Banner **********/
+
+.section-faq-banner {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-faq-banner #troca100Banner {
+    width: 18vw;
+}
+
+.section-faq-banner #banner-img {
+    border-radius: 100%;
+    width: 45vw;
+    height: 90vh;
+    border: 10px solid #ffffff;
+}
+
+.section-faq-banner h1, .section-faq-banner span {
+    color: #ffffff;
+}
+
+.section-faq-banner h1 {
+    font-size: 4vw;
+    font-weight: 900;
+    margin: 0;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.section-faq-banner span {
+    font-size: 2vw;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5vh;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 25vw;
+    margin-left: 10vw;
+}
+
+.banner-text img {
+    position: absolute;
+    top: 10vh;
+}
+
+/********* FAQ - Pergunta e resposta **********/
+
+.question-container {
+    min-height: 0vh;
+}
+
+.question-header {
+    background-color: var(--question--section-header-color);
+    position: relative;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    width: 85vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    opacity: .8;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.question-header:hover {
+    opacity: 1;
+}
+
+.question-header img {
+    width: 2vw;
+    animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+    0% { transform: scale(0.85); }
+    50% { transform: scale(1);}
+    100% { transform: scale(0.85);}
+}
+
+.question-content {
+    min-height: 80vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 13vw;
+}
+
+.question-header span {
+    position: absolute;
+    right: 5vw;
+    font-weight: 700;
+}
+
+.question-container * span, .question-container * * span, .question-container span {
+    font-size: 2vw;
+}
+
+.pergunta-resposta {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    text-align: justify;
+
+}
+
+.pergunta-resposta .resposta {
+    visibility: hidden;
+}
+
+.pergunta-resposta .pergunta {
+    transition: .6s;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.pergunta-resposta .pergunta:hover {
+    opacity: 1;
+}
+
+.pergunta-resposta span a {
+    text-decoration: none;
+}
+
+.identificação-pergunta {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    width: 30vw;
+    display: flex;
+    padding: 1vw;
+}
+
+.identificação-pergunta span {
+    color: #ffffff;
+    font-weight: 700;
+    margin: auto;
+}
+
+/*Resolução tablet*/
+
+@media screen and (max-width: 800px) {
+    .section-faq-banner{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .banner-text{
+        display: block;
+        height: 50vh;
+        width: 60vw;
+    }
+
+    .section-faq-banner h1 {
+        font-size: 8vw;
+    }
+
+    .section-faq-banner #troca100Banner {
+        width: 50vw;
+    }
+    .section-faq-banner #banner-img {
+        width: 70vw;
+        height: 45vh;
+    }
+
+    .section-faq-banner span {
+        font-size: 3.5vw;
+        font-weight: 500;
+        position: absolute;
+        bottom: 5vh;
+    }
+
+    /*SECÇÃO FAQ*/
+    .section-faq {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .faq-container {
+        flex-direction: column;
+    }
+    .section-faq-header {
+        flex-direction: column ;
+    }
+
+    .section-faq-header h1{
+        margin-left: 0 ;
+    }
+
+    .section-faq-header span {
+        font-size: 3vw;
+    }
+
+    .faq-item span, .faq-item * span {
+        font-size: 3.5vw;
+    }
+
+    /*Seções de perguntas*/
+
+    .question-header span {
+        font-size: 3.5vw;
+    }
+
+    .question-header img {
+        width: 4vw;
+    }
+
+    .question-header {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+
+    }
+
+    /*PERGUNTAS*/
+    .identificação-pergunta {
+        width: 60vw;
+        padding: 2vw;
+    }
+    
+    .identificação-pergunta span {
+        font-size: 4vw;
+    }
+
+    .question-container * span, .question-container * * span, .question-container span {
+        font-size: 3.5vw;
+    }
+
+    .resposta {
+        margin-top: 25px;
+    }
+
+    .pergunta-resposta .resposta {
+        visibility: visible;
+    }
+
+    /*NÃO PARTICIPAM*/
+
+    .section-nao-participam {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kit-promocional img {
+        width: 80vw;
+    }
+
+    .kit-promocional span {
+        font-size: 4vw;
+    }
+
+    .nao-participam {
+        margin: 0;
+    }
+
+    .nao-participam-itens {
+        margin-top: 0;
+    }
+
+    .nao-participam h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nao-participam h1, .kit-promocional h1 {
+        font-size: 5.6vw;
+    }
+    
+    .nao-participam span, .kit-promocional span{
+        font-size: 3vw;
+    }
+    .nao-participam-img {
+        height: 250px;
+        width: 250px;
+        border-radius: 180px;
+        border: 2px solid black;
+        margin-bottom: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    .nao-participam-item {
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+
+    .nao-participam-item span {
+        margin: 0;
+        font-size: 4vw;
+    }
+
+    .kit-promocional span{
+        font-size: 4vw;
+    }
+
+    .produtos-promocionais {
+        background-image: url("./assets/produto-promocional-mobile.jpg");
+    }
+    
+    .produtos-qtd-especial{
+        background-image: url("./assets/produto-qtd-especial-mobile.jpg");
+    
+    }
+    
+    .produtos-leve-mais-pague-menos {
+        background-image: url("./assets/pague-leve+-mobile.jpg");
+    }
+
+    /*OQEB*/
+
+    .section-o-que-esta-buscando {
+        background-image: url('./assets/bg-o-que-esta-buscando-mobile.png');
+        background-repeat: no-repeat;
+    }
+
+    #oqeb-title {
+        font-size: 8vw;
+    }
+    
+    #oqeb-sub-title {
+        font-size: 4.8vw;
+    }
+
+    .oqeb-container {
+        flex-direction: column;
+    }
+
+    .oqeb-item {
+        width: 40vw;
+        margin: auto;
+    }
+
+    .oqeb-item h1 {
+        font-size: 4vw;
+    }
+    
+    .oqeb-item h3 {
+        font-size: 3vw;
+    }
+    
+
+    /*DUVIDAS*/
+
+    .duvidas {
+        flex-direction: column;
+    }
+    #duvidas-img {
+        display: none;
+    }
+    .duvidas-contato {
+        height: 100vh;
+    }
+    .duvidas-contato span, .duvidas-contato a {
+        font-size: 4.5vw;
+    }
+    
+    .duvidas-contato h1 {
+        font-size: 6vw;
+    }
+    
+    .duvidas-contato-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60vh;
+    }
+}   
+
+@media screen and (max-width:400px) {
+    
+    /*BANNER TROCA100*/
+    #troca100Banner {
+        width: 80vw;
+    }
+
+    .banner-text{
+        height: 40vh;
+        width: 60vw;
+    }
+
+    .section-faq-banner {
+        align-items: center;
+    }
+
+    .section-faq-banner #banner-img {
+        width: 40vw;
+        height: 20vh;
+    }
+
+
+    /*FAQ - Inicio*/
+
+    .section-faq-header {
+        margin-bottom: 3vh ;
+    }
+
+    .faq-item {
+        margin-bottom: 5vh;
+    }
+
+    .faq-item .faq-item-card span, .faq-item span{
+        font-size: 4vw;
+    }
+
+    .faq-item-card {
+        text-align: center;
+    }
+
+
+    /*OQEB*/
+    .oqeb-item a img {
+        width: 40vw;
+    }
+
+    .oqeb-item h1 {
+        font-size: 6vw;
+    }
+    
+    .oqeb-item h3 {
+        font-size: 4vw;
+    }
+}
