@@ -522,6 +522,10 @@ section {
     }
 
     /*PERGUNTAS*/
+    .question-header {
+        opacity: 1;
+    }
+
     .identificação-pergunta {
         width: 60vw;
         padding: 2vw;
@@ -653,6 +657,12 @@ section {
     .duvidas {
         flex-direction: column;
     }
+
+    .duvidas-container a {
+        opacity: 1;
+        text-decoration:underline ;
+    }
+
     #duvidas-img {
         display: none;
     }
@@ -693,6 +703,14 @@ section {
         justify-content: space-evenly;
     }
 
+    .banner-text h1 {
+        margin-left: 28%;
+    }
+
+    .banner-text span {
+        left: 18%;
+    }
+
     .section-faq-banner {
         align-items: center;
     }
@@ -700,6 +718,7 @@ section {
     .section-faq-banner #banner-img {
         width: 40vw;
         height: 20vh;
+        display: none;
     }
 
 
@@ -724,8 +743,13 @@ section {
 
 
     /*OQEB*/
+    .section-o-que-esta-buscando {
+        background-size:100vw 135vh ;
+    }
+
     .oqeb-item a img {
         width: 40vw;
+        animation: twinkle 1.5s infinite;
     }
 
     .oqeb-item h1 {
@@ -738,6 +762,7 @@ section {
 
     /*DUVIDAS*/
 
+    
     .duvidas {
         max-height: 60vh;
     }
