@@ -243,7 +243,7 @@ section {
     font-size: 1.5vw;
     font-weight: 600;
     margin-top: 3vh;
-    width: 80%;
+    width: 100%;
 }
 
 /********** Secção duvidas **********/
@@ -504,6 +504,10 @@ section {
         font-size: 3.5vw;
     }
 
+    #identificacao-consumidor {
+        margin-left: -3vw;
+    }
+
     /*Seções de perguntas*/
 
     .question-header span {
@@ -694,6 +698,8 @@ section {
     }
 }   
 
+/*Resolução para celular*/
+
 @media screen and (max-width:500px) {
     
     /*BANNER TROCA100*/
@@ -753,7 +759,7 @@ section {
 
     /*OQEB*/
     .section-o-que-esta-buscando {
-        background-size:100vw 135vh ;
+        background-size:100vw 150vh ;
     }
 
     .oqeb-item a img {
