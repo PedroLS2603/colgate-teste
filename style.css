@@ -682,9 +682,15 @@ section {
         width: 80vw;
     }
 
+    .section-faq-banner {
+        justify-content: none;
+        min-height: 80vh;
+    }
+
     .banner-text{
         height: 40vh;
         width: 60vw;
+        justify-content: space-evenly;
     }
 
     .section-faq-banner {
@@ -698,6 +704,7 @@ section {
 
 
     /*FAQ - Inicio*/
+
 
     .section-faq-header {
         margin-bottom: 3vh ;
@@ -727,5 +734,11 @@ section {
     
     .oqeb-item h3 {
         font-size: 4vw;
+    }
+
+    /*DUVIDAS*/
+
+    .duvidas {
+        min-height: 80vh;
     }
 }
