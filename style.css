@@ -544,10 +544,11 @@ section {
 
     .resposta {
         margin-top: 25px;
+        visibility: visible;
     }
 
-    .pergunta-resposta .resposta {
-        visibility: visible;
+    #duvidas-gerais-2, #duvidas-gerais-3, #regras-resgate-2, #regras-resgate-3 {
+        display: none;
     }
 
     /*NÃO PARTICIPAM*/
