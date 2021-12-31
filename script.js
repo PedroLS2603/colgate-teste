@@ -33,10 +33,8 @@ function showSection(id) {
 }
 
 function showMoreThanOneSection(origin){
-    console.log(origin);
     switch(origin) {            
         case 'regras-resgate-1':
-            console.log('entrei na regras-resgate');
             let element1 = document.getElementById('regras-resgate-2');
             element1.style['display'] = 'none';
                     
@@ -47,8 +45,6 @@ function showMoreThanOneSection(origin){
             showSection('faq-section-6');
             break;
         case 'duvidas-gerais-1':
-            console.log('entrei nas duvidas gerais');
-
             let element = document.getElementById('duvidas-gerais-2');
             element.style['display'] = 'none';
                     
@@ -58,6 +54,5 @@ function showMoreThanOneSection(origin){
             showSection('faq-section-8');
             showSection('faq-section-9');
             break;
-        }        
-        
+        }                
 }
